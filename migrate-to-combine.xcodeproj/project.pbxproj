@@ -15,6 +15,7 @@
 		7C3C23C1286064BC00BCBDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3C23BF286064BC00BCBDF7 /* LaunchScreen.storyboard */; };
 		7C3C23C928606DF500BCBDF7 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C23C828606DF500BCBDF7 /* Animal.swift */; };
 		7C3C23CD28606F9D00BCBDF7 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C23CC28606F9D00BCBDF7 /* NetworkingService.swift */; };
+		7C3C23CF286072DC00BCBDF7 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C23CE286072DC00BCBDF7 /* AnimalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7C3C23C2286064BC00BCBDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C3C23C828606DF500BCBDF7 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		7C3C23CC28606F9D00BCBDF7 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		7C3C23CE286072DC00BCBDF7 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7C3C23B4286064B900BCBDF7 /* AppDelegate.swift */,
 				7C3C23B6286064B900BCBDF7 /* SceneDelegate.swift */,
 				7C3C23B8286064B900BCBDF7 /* AnimalViewController.swift */,
+				7C3C23CE286072DC00BCBDF7 /* AnimalCell.swift */,
 				7C3C23CC28606F9D00BCBDF7 /* NetworkingService.swift */,
 				7C3C23C828606DF500BCBDF7 /* Animal.swift */,
 				7C3C23BA286064B900BCBDF7 /* Main.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3C23CD28606F9D00BCBDF7 /* NetworkingService.swift in Sources */,
+				7C3C23CF286072DC00BCBDF7 /* AnimalCell.swift in Sources */,
 				7C3C23B9286064B900BCBDF7 /* AnimalViewController.swift in Sources */,
 				7C3C23C928606DF500BCBDF7 /* Animal.swift in Sources */,
 				7C3C23B5286064B900BCBDF7 /* AppDelegate.swift in Sources */,
