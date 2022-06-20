@@ -11,11 +11,13 @@ class AnimalViewController: UITableViewController {
     
     var animals: [Animal] = []
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getAnimals()
     }
 
-
+    func getAnimals() {
+        
+    }
 }
 
