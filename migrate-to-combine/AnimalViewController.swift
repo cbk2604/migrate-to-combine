@@ -8,6 +8,8 @@
 import UIKit
 
 class AnimalViewController: UITableViewController {
+    
+    var animals: [Animal] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
