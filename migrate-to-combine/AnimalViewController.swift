@@ -10,6 +10,11 @@ import UIKit
 class AnimalViewController: UITableViewController {
     
     var animals: [Animal] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Animals"
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
