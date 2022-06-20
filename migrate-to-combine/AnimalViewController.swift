@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class AnimalViewController: UITableViewController {
     
@@ -21,16 +22,32 @@ class AnimalViewController: UITableViewController {
         getAnimals()
     }
 
+    var getAnimalsToken: AnyCancellable?
     func getAnimals() {
-        NetworkingService.getAnimals { [unowned self] result in
-            switch result {
-            case .success(let animals):
+        getAnimalsToken = NetworkingService
+            .getAnimals()
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    print("Publisher stopped observing.")
+                case .failure(let error):
+                    print("This is error passed to our future", error)
+                }
+            } receiveValue: { [unowned self] animals in
                 self.animals = animals
                 self.tableView.reloadData()
-            case .failure(let error):
-                print(error)
             }
-        }
+
+//        NetworkingService.getAnimals { [unowned self] result in
+//            switch result {
+//            case .success(let animals):
+//                self.animals = animals
+//                self.tableView.reloadData()
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
