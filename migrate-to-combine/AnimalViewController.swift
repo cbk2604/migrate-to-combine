@@ -52,11 +52,11 @@ class AnimalViewController: UITableViewController {
     }
     
     func showEmoji(for animal: Animal) {
-        
+        AlertService.showAlert(with: animal.emoji, in: self)
     }
     
     func makeNoise(for animal: Animal) {
-        
+        AlertService.showAlert(with: animal.noise, in: self)
     }
 }
 
