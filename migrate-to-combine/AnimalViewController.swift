@@ -17,7 +17,15 @@ class AnimalViewController: UITableViewController {
     }
 
     func getAnimals() {
-        
+        NetworkingService.getAnimals { [unowned self] result in
+            switch result {
+            case .success(let animals):
+                self.animals = animals
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
 
